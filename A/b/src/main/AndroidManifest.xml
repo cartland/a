@@ -4,5 +4,33 @@
     <application
         android:icon="@drawable/a"
         android:label="A"
-        android:roundIcon="@drawable/a" />
+        android:roundIcon="@drawable/a">
+        <activity android:name="a.l.A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="a.co" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="a.co" />
+            </intent-filter>
+        </activity>
+    </application>
 </manifest>
