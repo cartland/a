@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="a.a">
+    package="a.l">
 
     <application
         android:icon="@drawable/a"
         android:label="A"
-        android:roundIcon="@drawable/a">
-        <activity android:name=".A">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+        android:roundIcon="@drawable/a"></application>
 
 </manifest>
