@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/a" />
+            <option value="$PROJECT_DIR$/b" />
             <option value="$PROJECT_DIR$/l" />
           </set>
         </option>

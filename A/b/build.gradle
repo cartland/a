@@ -1,14 +1,18 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.feature'
 
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
+
+    baseFeature true
+
     defaultConfig {
-        applicationId "a.a"
         minSdkVersion 26
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -23,5 +27,6 @@ android {
 }
 
 dependencies {
-    implementation project(':b')
+    api project(':l')
+    application project(':a')
 }
