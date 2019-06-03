@@ -1,13 +1,12 @@
-apply plugin: 'com.android.feature'
+apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-
-    baseFeature true
+    compileSdkVersion 28
 
     defaultConfig {
+        applicationId "a.a"
         minSdkVersion 26
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -23,9 +22,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
-    api project(':l')
-    application project(':a')
+    implementation project(':l')
 }
