@@ -7,3 +7,8 @@ steps:
   args: ['-g', '.gradle', 'assemble']
 - name: gcr.io/cloud-builders/gsutil
   args: ['cp', 'cache.zip', 'gs://gradle_cache_$PROJECT_ID/cache.zip']
+
+artifacts:
+  objects:
+    location: 'gs://landofcart_cloudbuild/artifacts/'
+    paths: ['a/build/outputs/apk/debug/a-debug.apk']
