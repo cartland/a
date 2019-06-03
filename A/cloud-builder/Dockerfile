@@ -19,4 +19,4 @@ RUN wget -q "https://dl.google.com/android/repository/sdk-tools-linux-4333796.zi
 ENV PATH $PATH:$ANDROID_HOME/tools/bin
 
 # Install Android SDK components
-RUN echo y | sdkmanager --install 'platforms;android-27' "build-tools;27.0.3" "platform-tools"
+RUN echo y | sdkmanager --install 'platforms;android-28' "build-tools;28.0.3" "platform-tools"
