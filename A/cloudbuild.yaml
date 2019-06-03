@@ -11,4 +11,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://landofcart_cloudbuild/artifacts/'
-    paths: ['a/build/outputs/apk/debug/a-debug.apk']
+    paths: ['a/build/outputs/apk/debug/*.apk']
